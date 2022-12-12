@@ -1,4 +1,8 @@
-﻿
+
+# https://qiita.com/ponsuke0531/items/4629626a3e84bcd9398f
+# Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process
+# Windows PowerShell ISE run as administrator
+ 
 # Set URL
 $Url = "https://www.plexonline.com"; 
 #$url = "https://www.baidu.com"; 
