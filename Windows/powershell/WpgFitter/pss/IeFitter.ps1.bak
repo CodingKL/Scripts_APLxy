@@ -4,8 +4,8 @@
 # Windows PowerShell ISE run as administrator
  
 # Set URL
-#$Url = "https://www.plexonline.com"; 
-$url = "https://www.baidu.com"; 
+$Url = "https://www.plexonline.com"; 
+#$url = "https://www.baidu.com"; 
 #$URL = "https://qiita.com/"; 
 #$URL = "https://qiita.com/login/"; 
 
@@ -42,13 +42,9 @@ while ($IE.Busy -eq $true)
     Start-Sleep -Milliseconds 5000; 
 } 
 Start-Sleep -Milliseconds 5000; 
-
-#$IE.Close()
-
 # 将指定的用户名、密码和公司代码插入到各自的字段中。
-#$IE.Document.getElementById("txtUserID").value = $Username;
-#$IE.Document.getElementByID("txtPassword").value = $Password;
-$IE.document
+$IE.Document.getElementById("txtUserID").value = $Username;
+$IE.Document.getElementByID("txtPassword").value = $Password;
 #$IE.Document.getElementByID("txtCompanyCode").value = $CompanyCode;
 
 #$IE.Document.getElementById("identity").value = $Username;
@@ -72,9 +68,7 @@ $IE.document
 #$IE.Document.getElementById("btnLogin_Label").Click();
 
 #$titles = $ie.Document.body.getElementsByClassName('newstitle')
-#$titles = $ie.Document.body.getElementsByTagName('p')
-#$titles =$ie.Document.body
-$titles =$ie.Document
+$titles = $ie.Document.body.getElementsByTagName('p')
 foreach ($storyTitle in $titles) {
      Write-Output $storyTitle.innerText
 }
