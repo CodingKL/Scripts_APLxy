@@ -2,8 +2,8 @@
 $WebsiteCfgArr = @{}
 
 #Read config information from file
-#Import-Csv ..\cfg\WebsiteInfo.cfg -header Key,Val -Delimiter "=" | % { $WebsiteCfgArr.Add($_.Key.Trim(), $_.Val.Trim())}
-Import-Csv D:\github\Scripts_APLxy\Windows\powershell\WpgFitter\cfg\WebsiteInfo.cfg -header Key,Val -Delimiter "=" | % { $WebsiteCfgArr.Add($_.Key.Trim(), $_.Val.Trim())}
+Import-Csv ..\cfg\WebsiteInfo.cfg -header Key,Val -Delimiter "=" | % { $WebsiteCfgArr.Add($_.Key.Trim(), $_.Val.Trim())}
+#Import-Csv D:\github\Scripts_APLxy\Windows\powershell\WpgFitter\cfg\WebsiteInfo.cfg -header Key,Val -Delimiter "=" | % { $WebsiteCfgArr.Add($_.Key.Trim(), $_.Val.Trim())}
 
 # https://www.tutorialspoint.com/powershell/powershell_array.htm
 write-host("Print all the config information:")
