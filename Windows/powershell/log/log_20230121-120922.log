@@ -1,0 +1,68 @@
+﻿**********************
+Windows PowerShell トランスクリプト開始
+開始時刻: 20230121120922
+ユーザー名: DESKTOP-5M2S7F4\user
+RunAs ユーザー: DESKTOP-5M2S7F4\user
+構成名: 
+コンピューター: DESKTOP-5M2S7F4 (Microsoft Windows NT 10.0.19044.0)
+ホスト アプリケーション: powershell C:\Users\user\zyh\Scripts_APLxy\Windows\powershell\WpgFitter\pss\WpgFitter.ps1
+プロセス ID: 2420
+PSVersion: 5.1.19041.2364
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.2364
+BuildVersion: 10.0.19041.2364
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+トランスクリプトが開始されました。出力ファイル: ..\log\log_20230121-120922.log
+PS>終了エラー(New-Object): "CLSID {0002DF01-0000-0000-C000-000000000046} を含むコンポーネントの COM クラス ファクトリを取得中に、次のエラーが発生しました: 80040154 クラスが登録されていません (HRESULT からの例外:0x80040154 (REGDB_E_CLASSNOTREG))。"
+New-Object : CLSID {0002DF01-0000-0000-C000-000000000046} を含むコンポーネントの COM クラス ファクトリを取得中に、次のエラーが発生しました: 80040154 クラスが登録され
+ていません (HRESULT からの例外:0x80040154 (REGDB_E_CLASSNOTREG))。
+発生場所 C:\Users\user\zyh\Scripts_APLxy\Windows\powershell\WpgFitter\pss\WpgFitter.ps1:59 文字:15
++ $startIeCmd = New-Object -ComObject InternetExplorer.Application
++               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ResourceUnavailable: (:) [New-Object], COMException
+    + FullyQualifiedErrorId : NoCOMClassIdentified,Microsoft.PowerShell.Commands.NewObjectCommand
+New-Object : CLSID {0002DF01-0000-0000-C000-000000000046} を含むコンポーネントの COM クラス ファクトリを取得中に、次の
+エラーが発生しました: 80040154 クラスが登録されていません (HRESULT からの例外:0x80040154 (REGDB_E_CLASSNOTREG))。
+発生場所 C:\Users\user\zyh\Scripts_APLxy\Windows\powershell\WpgFitter\pss\WpgFitter.ps1:59 文字:15
++ $startIeCmd = New-Object -ComObject InternetExplorer.Application
++               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ResourceUnavailable: (:) [New-Object], COMException
+    + FullyQualifiedErrorId : NoCOMClassIdentified,Microsoft.PowerShell.Commands.NewObjectCommand
+
+このオブジェクトにプロパティ 'Visible' が見つかりません。プロパティが存在し、設定可能であることを確認してください。
+発生場所 C:\Users\user\zyh\Scripts_APLxy\Windows\powershell\WpgFitter\pss\WpgFitter.ps1:60 文字:1
++ $startIeCmd.Visible = $true
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) []、RuntimeException
+    + FullyQualifiedErrorId : PropertyNotFound
+このオブジェクトにプロパティ 'Visible' が見つかりません。プロパティが存在し、設定可能であることを確認してください。
+発生場所 C:\Users\user\zyh\Scripts_APLxy\Windows\powershell\WpgFitter\pss\WpgFitter.ps1:60 文字:1
++ $startIeCmd.Visible = $true
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) []、RuntimeException
+    + FullyQualifiedErrorId : PropertyNotFound
+
+PS>終了エラー(ConvertTo-SecureString): "引数が null であるため、パラメーター 'String' にバインドできません。"
+ConvertTo-SecureString : 引数が null であるため、パラメーター 'String' にバインドできません。
+発生場所 C:\Users\user\zyh\Scripts_APLxy\Windows\powershell\WpgFitter\pss\WpgFitter.ps1:71 文字:126
++ ... entList @($Username,(ConvertTo-SecureString -String $Password -AsPlai ...
++                                                         ~~~~~~~~~
+    + CategoryInfo          : InvalidData: (:) [ConvertTo-SecureString]、ParameterBindingValidationException
+    + FullyQualifiedErrorId : ParameterArgumentValidationErrorNullNotAllowed,Microsoft.PowerShell.Commands.ConvertToSecu
+reStringCommand
+ConvertTo-SecureString : 引数が null であるため、パラメーター 'String' にバインドできません。
+発生場所 C:\Users\user\zyh\Scripts_APLxy\Windows\powershell\WpgFitter\pss\WpgFitter.ps1:71 文字:126
++ ... entList @($Username,(ConvertTo-SecureString -String $Password -AsPlai ...
++                                                         ~~~~~~~~~
+    + CategoryInfo          : InvalidData: (:) [ConvertTo-SecureString]、ParameterBindingValidationException
+    + FullyQualifiedErrorId : ParameterArgumentValidationErrorNullNotAllowed,Microsoft.PowerShell.Commands.ConvertToSe
+   cureStringCommand
+
+
+
+PS>$global:?
+True

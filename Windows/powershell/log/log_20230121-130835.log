@@ -1,0 +1,39 @@
+﻿**********************
+Windows PowerShell トランスクリプト開始
+開始時刻: 20230121130835
+ユーザー名: DESKTOP-5M2S7F4\user
+RunAs ユーザー: DESKTOP-5M2S7F4\user
+構成名: 
+コンピューター: DESKTOP-5M2S7F4 (Microsoft Windows NT 10.0.19044.0)
+ホスト アプリケーション: powershell C:\Users\user\zyh\Scripts_APLxy\Windows\powershell\WpgFitter\pss\WpgFitter.ps1
+プロセス ID: 12124
+PSVersion: 5.1.19041.2364
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.2364
+BuildVersion: 10.0.19041.2364
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+トランスクリプトが開始されました。出力ファイル: ..\log\log_20230121-130835.log
+PS>終了エラー(ConvertTo-SecureString): "引数が null であるため、パラメーター 'String' にバインドできません。"
+ConvertTo-SecureString : 引数が null であるため、パラメーター 'String' にバインドできません。
+発生場所 C:\Users\user\zyh\Scripts_APLxy\Windows\powershell\WpgFitter\pss\WpgFitter.ps1:71 文字:126
++ ... entList @($Username,(ConvertTo-SecureString -String $Password -AsPlai ...
++                                                         ~~~~~~~~~
+    + CategoryInfo          : InvalidData: (:) [ConvertTo-SecureString]、ParameterBindingValidationException
+    + FullyQualifiedErrorId : ParameterArgumentValidationErrorNullNotAllowed,Microsoft.PowerShell.Commands.ConvertToSecu
+reStringCommand
+ConvertTo-SecureString : 引数が null であるため、パラメーター 'String' にバインドできません。
+発生場所 C:\Users\user\zyh\Scripts_APLxy\Windows\powershell\WpgFitter\pss\WpgFitter.ps1:71 文字:126
++ ... entList @($Username,(ConvertTo-SecureString -String $Password -AsPlai ...
++                                                         ~~~~~~~~~
+    + CategoryInfo          : InvalidData: (:) [ConvertTo-SecureString]、ParameterBindingValidationException
+    + FullyQualifiedErrorId : ParameterArgumentValidationErrorNullNotAllowed,Microsoft.PowerShell.Commands.ConvertToSe
+   cureStringCommand
+
+
+
+PS>$global:?
+True

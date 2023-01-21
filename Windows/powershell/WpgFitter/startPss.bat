@@ -116,13 +116,22 @@ echo "^ start powershell script ^"
 rem @echo off
 echo off
 
+set base_dir=%~dp0
+%base_dir:~0,2%
+
+pushd %base_dir%
+
 set pssExeFlag=no
 
 set /p pssExeFlag=Let us start to execute the script job, is it ok?[yes/no](default - no):
 ::if %pssExeFlag%==yes (echo run pss & powershell ./pss/WpgFitter.ps1) else (Donot run pss!!!)
 ::if %pssExeFlag%==yes (echo run pss & powershell .//pss//WpgFitter.ps1) else (echo Donot run pss!!!)
 ::if %pssExeFlag%==yes (echo run pss & powershell .\pss\WpgFitter.ps1) else (echo Donot run pss!!!)
-if %pssExeFlag%==yes (echo run pss & powershell D:\github\Scripts_APLxy\Windows\powershell\WpgFitter\pss\WpgFitter.ps1) else (echo Donot run pss!!!)
+::if %pssExeFlag%==yes (echo run pss & powershell D:\github\Scripts_APLxy\Windows\powershell\WpgFitter\pss\WpgFitter.ps1) else (echo Donot run pss!!!)
+::if %pssExeFlag%==yes (echo run pss & powershell -ExecutionPolicy Unrestricted .\pss\WpgFitter.ps1) else (echo Donot run pss!!!)
+
+::if %pssExeFlag%==yes (echo run pss & powershell .\pss\WpgFitter.ps1) else (echo Donot run pss!!!)
+if %pssExeFlag%==yes (echo run pss & powershell C:\Users\user\zyh\Scripts_APLxy\Windows\powershell\WpgFitter\pss\WpgFitter.ps1) else (echo Donot run pss!!!)
 
 goto xx
 ::https://jingyan.baidu.com/article/6fb756ec52ddd1241858fb05.html
@@ -133,6 +142,7 @@ rem bat 注释
 rem pause命令可以让脚本程序暂停， 会打印输出 “请按任意键继续...”字样。
 :xx
 
+popd
 pause
 
 

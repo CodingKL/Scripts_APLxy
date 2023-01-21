@@ -17,10 +17,20 @@ https://qiita.com/ponsuke0531/items/4629626a3e84bcd9398f
 
 :comment
 
+set base_dir=%~dp0
+%base_dir:~0,2%
+
+pushd %base_dir%
 
 ::powershell -ExecutionPolicy Unrestricted C:\Users\user\zyh\Scripts_APLxy\Windows\powershell\WpgFitter\pss\WpgFitter.ps1
 
-powershell -ExecutionPolicy Unrestricted .\pss\WpgFitter.ps1
+::powershell -ExecutionPolicy Unrestricted .\pss\WpgFitter.ps1
 
+::right mouse single click
+::powershell -ExecutionPolicy Unrestricted C:\Users\user\zyh\Scripts_APLxy\Windows\powershell\WpgFitter\pss\WpgFitter.ps1
+
+powershell C:\Users\user\zyh\Scripts_APLxy\Windows\powershell\WpgFitter\pss\WpgFitter.ps1
+
+popd
 pause
 exit

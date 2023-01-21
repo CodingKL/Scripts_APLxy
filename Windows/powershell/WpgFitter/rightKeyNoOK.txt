@@ -1,0 +1,5 @@
+PowerShell Get-ExecutionPolicy
+
+PowerShell Set-ExecutionPolicy RemoteSigned
+
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process
